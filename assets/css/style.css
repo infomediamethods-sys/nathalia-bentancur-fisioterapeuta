@@ -142,9 +142,16 @@ strong, .destaque { color: var(--texto); font-weight: 600; }
 .heroi__prova { margin-block-start: var(--space-2); font-size: 0.9375rem; }
 .heroi__prova p a, p.heroi__prova a { min-height: var(--toque-min); display: inline-flex; align-items: center; gap: var(--space-2); color: var(--texto-sec); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--borda); }
 .heroi__prova .icone { width: var(--icone-linha); height: var(--icone-linha); color: var(--accent); fill: var(--accent); }
-.heroi__foto { border-radius: var(--raio-foto); width: 100%; max-width: 400px; aspect-ratio: auto; height: clamp(240px, 34svh, 300px); }
-.heroi__foto img { object-position: 50% 8%; }
-@media (min-width: 600px) and (max-width: 899px) { .heroi__foto { height: 360px; } }
+.heroi__foto { border-radius: var(--raio-foto); width: 100%; max-width: 400px; }
+/* Celular/tablet (revisão 16/10): foto centralizada, entre o texto de apoio e os botões, em 4:5 e com o rosto no centro
+   (a imagem fica 131% mais larga que a caixa e encosta à esquerda: o rosto, a 38% da largura, cai no meio). */
+@media (max-width: 899px) {
+  .heroi__grade { display: flex; flex-direction: column; gap: 0; }
+  .heroi__texto { display: contents; }
+  .heroi__foto { order: 1; margin: var(--space-6) auto 0; aspect-ratio: 4 / 5; height: auto; }
+  .heroi__foto > picture > img { width: 131%; max-width: none; object-position: 0 0; }
+  .heroi .acoes, .heroi__ident, .heroi__prova { order: 2; }
+}
 @media (min-width: 900px) {
   .heroi { padding-block: var(--space-9) var(--section-y); }
   .heroi__grade { grid-template-columns: minmax(0, 1fr) minmax(0, 400px); gap: var(--space-9); align-items: center; }

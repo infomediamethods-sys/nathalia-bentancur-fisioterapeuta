@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" media="(max-width: 899px)" imagesrcset="assets/img/heroi-retrato-480.webp 480w, assets/img/heroi-retrato-960.webp 960w" imagesizes="100vw">
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "#pessoa", "name": "Nathália Pereira Bentancur", "jobTitle": "Fisioterapeuta", "identifier": "CREFITO-10/343204-F", "worksFor": {"@id": "#consultorio"}}, {"@type": "Physiotherapy", "@id": "#consultorio", "name": "Nathália Bentancur Fisioterapeuta", "telephone": "+55 48 99849-4285", "image": "assets/img/og.jpg", "address": {"@type": "PostalAddress", "streetAddress": "R. Dom Jaime Câmara, 66, Sala 201", "addressLocality": "Florianópolis", "addressRegion": "SC", "postalCode": "88015-120", "addressCountry": "BR"}, "openingHours": "Mo-Fr 09:00-18:00", "employee": {"@id": "#pessoa"}}]}</script>
@@ -66,7 +67,11 @@
       <p class="heroi__ident"><span class="nowrap">Nathália Pereira Bentancur&nbsp;·</span> <span class="nowrap">CREFITO-10/343204-F</span></p>
       <p class="heroi__prova"><a href="https://www.google.com/maps/place/Nath%C3%A1lia+Bentancur+Fisioterapeuta/data=!4m7!3m6!1s0x952739c3f7d440ab:0xed1257fa45721347!8m2!3d-27.592478!4d-48.5521998!16s%2Fg%2F11sgj339m9!19sChIJq0DU98M5J5URRxNyRfpXEu0" rel="noopener"><svg aria-hidden="true" focusable="false" class="icone icone--star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></svg><span>5,0 no Google&nbsp;· 44 avaliações</span></a></p>
     </div>
-    <div class="midia heroi__foto"><picture><source srcset="assets/img/heroi-retrato.webp" type="image/webp"><img src="assets/img/heroi-retrato.jpg" width="600" height="750" alt="Nathália Bentancur, fisioterapeuta, sentada e sorrindo" sizes="(min-width: 900px) 400px, 100vw" fetchpriority="high"></picture></div>
+    <div class="midia heroi__foto"><picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/heroi-retrato-480.webp 480w, assets/img/heroi-retrato-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/heroi-retrato-960.webp 960w" sizes="100vw">
+  <img src="assets/img/heroi-retrato-960.jpg" width="600" height="750" alt="Nathália Bentancur, fisioterapeuta, sentada e sorrindo" sizes="(min-width: 900px) 400px, 100vw" decoding="async" fetchpriority="high">
+</picture></div>
   </div>
 </section>
 
@@ -93,7 +98,11 @@
       <p>Com o tempo, essas mudanças pequenas também passam a doer.</p>
       <p class="destaque">Por isso, antes de qualquer técnica, vem a história da sua dor.</p>
     </div>
-    <div class="midia proporcao-retrato split__foto"><picture><source srcset="assets/img/entender-compensa.webp" type="image/webp"><img src="assets/img/entender-compensa.jpg" width="1200" height="1500" alt="Pessoa de pé junto à janela, com a mão apoiada na lombar e o peso do corpo num lado só" sizes="(min-width: 900px) 440px, 100vw" loading="lazy" decoding="async"></picture></div>
+    <div class="midia proporcao-retrato split__foto"><picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/entender-compensa-480.webp 480w, assets/img/entender-compensa-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/entender-compensa-960.webp 960w" sizes="50vw">
+  <img src="assets/img/entender-compensa-960.jpg" width="1200" height="1500" alt="Pessoa de pé junto à janela, com a mão apoiada na lombar e o peso do corpo num lado só" sizes="(min-width: 900px) 440px, 100vw" decoding="async">
+</picture></div>
   </div>
 </section>
 
@@ -123,7 +132,11 @@
 
 <section class="secao secao--branca" id="avaliacao">
   <div class="container split split--invertido">
-    <div class="midia proporcao-retrato split__foto"><picture><source srcset="assets/img/areas-faixa.webp" type="image/webp"><img src="assets/img/areas-faixa.jpg" width="1200" height="1500" alt="Faixa elástica laranja e toalha azul sobre um banco de madeira" sizes="(min-width: 900px) 440px, 100vw" loading="lazy" decoding="async"></picture></div>
+    <div class="midia proporcao-retrato split__foto"><picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/areas-faixa-480.webp 480w, assets/img/areas-faixa-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/areas-faixa-960.webp 960w" sizes="50vw">
+  <img src="assets/img/areas-faixa-960.jpg" width="1200" height="1500" alt="Faixa elástica laranja e toalha azul sobre um banco de madeira" sizes="(min-width: 900px) 440px, 100vw" decoding="async">
+</picture></div>
     <div class="split__texto revelar">
       <p class="rotulo">A primeira avaliação&nbsp;· Histórico e movimento</p>
       <h2>O que uma avaliação de fisioterapia olha</h2>
@@ -148,35 +161,55 @@
       <p>Todas começam pela avaliação.</p>
     </div>
     <ul role="list" class="areas revelar"><li class="area">
-          <div class="midia proporcao-card area__img"><picture><source srcset="assets/img/area-ortopedica.webp" type="image/webp"><img src="assets/img/area-ortopedica.jpg" width="1200" height="900" alt="Rolo de espuma azul e tapete bege no piso de madeira" sizes="(min-width: 1024px) 360px, (min-width: 600px) 45vw, 100vw" loading="lazy" decoding="async"></picture></div>
+          <div class="midia proporcao-card area__img"><picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/area-ortopedica-480.webp 480w, assets/img/area-ortopedica-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/area-ortopedica-960.webp 960w" sizes="50vw">
+  <img src="assets/img/area-ortopedica-960.jpg" width="1200" height="900" alt="Rolo de espuma azul e tapete bege no piso de madeira" sizes="(min-width: 1024px) 360px, (min-width: 600px) 45vw, 100vw" decoding="async" loading="lazy">
+</picture></div>
           <div class="area__corpo">
             <h3 class="area__titulo">Fisioterapia ortopédica</h3>
             <p>Para dores agudas e crônicas em músculos e articulações, e para retomar movimentos depois de uma lesão.</p>
             <a class="link" href="https://wa.me/5548998494285?text=Ol%C3%A1%2C%20Nath%C3%A1lia%21%20Quero%20saber%20mais%20sobre%20fisioterapia%20ortop%C3%A9dica.">Perguntar pelo <span class="nowrap">WhatsApp<svg aria-hidden="true" focusable="false" class="icone icone--arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></span></a>
           </div>
         </li><li class="area">
-          <div class="midia proporcao-card area__img"><picture><source srcset="assets/img/area-quiropraxia.webp" type="image/webp"><img src="assets/img/area-quiropraxia.jpg" width="1200" height="900" alt="Maca de madeira com toalha dobrada" sizes="(min-width: 1024px) 360px, (min-width: 600px) 45vw, 100vw" loading="lazy" decoding="async"></picture></div>
+          <div class="midia proporcao-card area__img"><picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/area-quiropraxia-480.webp 480w, assets/img/area-quiropraxia-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/area-quiropraxia-960.webp 960w" sizes="50vw">
+  <img src="assets/img/area-quiropraxia-960.jpg" width="1200" height="900" alt="Maca de madeira com toalha dobrada" sizes="(min-width: 1024px) 360px, (min-width: 600px) 45vw, 100vw" decoding="async" loading="lazy">
+</picture></div>
           <div class="area__corpo">
             <h3 class="area__titulo">Quiropraxia</h3>
             <p>Ajustes manuais na coluna, quando indicados.</p>
             <a class="link" href="https://wa.me/5548998494285?text=Ol%C3%A1%2C%20Nath%C3%A1lia%21%20Quero%20saber%20mais%20sobre%20quiropraxia.">Perguntar pelo <span class="nowrap">WhatsApp<svg aria-hidden="true" focusable="false" class="icone icone--arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></span></a>
           </div>
         </li><li class="area">
-          <div class="midia proporcao-card area__img"><picture><source srcset="assets/img/area-neuro.webp" type="image/webp"><img src="assets/img/area-neuro.jpg" width="1200" height="900" alt="Discos de equilíbrio e tênis brancos no piso" sizes="(min-width: 1024px) 360px, (min-width: 600px) 45vw, 100vw" loading="lazy" decoding="async"></picture></div>
+          <div class="midia proporcao-card area__img"><picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/area-neuro-480.webp 480w, assets/img/area-neuro-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/area-neuro-960.webp 960w" sizes="50vw">
+  <img src="assets/img/area-neuro-960.jpg" width="1200" height="900" alt="Discos de equilíbrio e tênis brancos no piso" sizes="(min-width: 1024px) 360px, (min-width: 600px) 45vw, 100vw" decoding="async" loading="lazy">
+</picture></div>
           <div class="area__corpo">
             <h3 class="area__titulo">Fisioterapia neurofuncional</h3>
             <p>Para quem convive com uma condição neurológica e quer trabalhar equilíbrio e marcha no dia a dia.</p>
             <a class="link" href="https://wa.me/5548998494285?text=Ol%C3%A1%2C%20Nath%C3%A1lia%21%20Quero%20saber%20mais%20sobre%20fisioterapia%20neurofuncional.">Perguntar pelo <span class="nowrap">WhatsApp<svg aria-hidden="true" focusable="false" class="icone icone--arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></span></a>
           </div>
         </li><li class="area">
-          <div class="midia proporcao-card area__img"><picture><source srcset="assets/img/area-idosos.webp" type="image/webp"><img src="assets/img/area-idosos.jpg" width="1200" height="900" alt="Mão de uma pessoa idosa no corrimão de madeira" sizes="(min-width: 1024px) 360px, (min-width: 600px) 45vw, 100vw" loading="lazy" decoding="async"></picture></div>
+          <div class="midia proporcao-card area__img"><picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/area-idosos-480.webp 480w, assets/img/area-idosos-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/area-idosos-960.webp 960w" sizes="50vw">
+  <img src="assets/img/area-idosos-960.jpg" width="1200" height="900" alt="Mão de uma pessoa idosa no corrimão de madeira" sizes="(min-width: 1024px) 360px, (min-width: 600px) 45vw, 100vw" decoding="async" loading="lazy">
+</picture></div>
           <div class="area__corpo">
             <h3 class="area__titulo">Reabilitação funcional em idosos</h3>
             <p>Exercícios para levantar da cadeira e caminhar pela casa, no ritmo de cada pessoa.</p>
             <a class="link" href="https://wa.me/5548998494285?text=Ol%C3%A1%2C%20Nath%C3%A1lia%21%20Quero%20saber%20mais%20sobre%20reabilita%C3%A7%C3%A3o%20funcional%20em%20idosos.">Perguntar pelo <span class="nowrap">WhatsApp<svg aria-hidden="true" focusable="false" class="icone icone--arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></span></a>
           </div>
         </li><li class="area">
-          <div class="midia proporcao-card area__img"><picture><source srcset="assets/img/area-ozonio.webp" type="image/webp"><img src="assets/img/area-ozonio.jpg" width="1200" height="900" alt="Bandeja de madeira com toalha dobrada e copo de água" sizes="(min-width: 1024px) 360px, (min-width: 600px) 45vw, 100vw" loading="lazy" decoding="async"></picture></div>
+          <div class="midia proporcao-card area__img"><picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/area-ozonio-480.webp 480w, assets/img/area-ozonio-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/area-ozonio-960.webp 960w" sizes="50vw">
+  <img src="assets/img/area-ozonio-960.jpg" width="1200" height="900" alt="Bandeja de madeira com toalha dobrada e copo de água" sizes="(min-width: 1024px) 360px, (min-width: 600px) 45vw, 100vw" decoding="async" loading="lazy">
+</picture></div>
           <div class="area__corpo">
             <h3 class="area__titulo">Ozonioterapia</h3>
             <p>Usada como apoio no cuidado de dores, inflamações e feridas.</p>
@@ -194,7 +227,11 @@
       <ol role="list" class="juntos"><li><span class="juntos__n">01</span><p>Saber o que fazer quando a dor aparece.</p></li><li><span class="juntos__n">02</span><p>Fortalecer o que o corpo poupou para se proteger da dor.</p></li><li><span class="juntos__n">03</span><p>Reestabelecer função para tarefas como subir escada ou carregar peso.</p></li><li><span class="juntos__n">04</span><p>Voltar com confiança às atividades que deixou de lado, como a corrida.</p></li></ol>
       <p class="nota nota--simples">Cada caso evolui de um jeito. O plano é revisto com você ao longo do tratamento.</p>
     </div>
-    <div class="midia proporcao-retrato split__foto"><picture><source srcset="assets/img/trabalhamos-maos.webp" type="image/webp"><img src="assets/img/trabalhamos-maos.jpg" width="1200" height="1500" alt="Mãos apoiando um joelho dobrado durante um exercício de mobilidade" sizes="(min-width: 900px) 440px, 100vw" loading="lazy" decoding="async"></picture></div>
+    <div class="midia proporcao-retrato split__foto"><picture>
+  <source type="image/webp" media="(max-width: 899px)" srcset="assets/img/trabalhamos-maos-480.webp 480w, assets/img/trabalhamos-maos-960.webp 960w" sizes="100vw">
+  <source type="image/webp" srcset="assets/img/trabalhamos-maos-960.webp 960w" sizes="50vw">
+  <img src="assets/img/trabalhamos-maos-960.jpg" width="1200" height="1500" alt="Mãos apoiando um joelho dobrado durante um exercício de mobilidade" sizes="(min-width: 900px) 440px, 100vw" decoding="async" loading="lazy">
+</picture></div>
   </div>
 </section>
 

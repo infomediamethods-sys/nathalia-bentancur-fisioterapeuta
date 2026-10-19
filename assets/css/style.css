@@ -313,3 +313,9 @@ html.lenis [id] { scroll-margin-top: 0; }
   .faq__item[open] summary .icone { transform: none; }
   .menu-celular { transition: none; }
 }
+
+
+/* Regra do Armin, 19/10/2026 (§0 "Rolagem leve no celular"): sem vidro desfocado no celular; fundo quase opaco. Aplicado por aplicar-carregamento.mjs. */
+@media (max-width: 899px) {
+  .cabecalho { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(245, 240, 232, 0.96); }
+}

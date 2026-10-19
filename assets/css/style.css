@@ -98,7 +98,7 @@ strong, .destaque { color: var(--texto); font-weight: 600; }
 /* Cabeçalho sticky translúcido */
 .cabecalho {
   position: sticky; top: 0; z-index: 80;
-  background: rgba(245, 240, 232, 0.92); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  background: rgba(245, 240, 232, 0.97); /* sem backdrop-filter: o desfoque redesenhava o cabeçalho a cada quadro e travava a rolagem rápida no computador (revisão Armin, 19/10) */
   border-bottom: 1px solid var(--borda);
 }
 .cabecalho__in { display: flex; align-items: center; gap: var(--space-4); min-height: 72px; }
